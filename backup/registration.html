@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Coding Magic 4 Kids</title>
+   <link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+
+<datalist id = "CourseList"> 
+   <option value="Java Basic"/>
+   <option value="Java Advanced"/>
+   <option value="Python Basic"/>
+   <option value="Python Advanced"/>
+</datalist>
+
+<datalist id = "AgeList"> 
+   <option value="11"/>
+   <option value="12"/>
+   <option value="13"/>
+   <option value="14"/>
+   <option value="15"/>
+   <option value="16"/>
+   <option value="17"/>
+   <option value="18"/>
+</datalist>
+
+<datalist id = "DayList">
+   <option value="Monday"/>
+   <option value="Tuesday"/>
+   <option value="Wednesday"/>
+   <option value="Thursday"/>
+   <option value="Friday"/>
+</datalist>
+
+<datalist id = "TimingsList">
+   <option value="3-3:55pm"/>
+   <option value="4-4:55pm"/>
+   <option value="5-5:55pm"/>
+   <option value="6-6:55pm"/>
+   <option value="7-7:55pm"/>
+   <option value="8-8:55pm"/>
+</datalist>
+
+
+<body style="background-color:powderblue;">
+   <div class="right">
+      <button>Class Schedule</button><br><br>
+      <button>Java Basic Course Details</button><br><br>
+      <button>Java Advanced Course Details</button><br><br>
+      <button>Python Basic Course Details</button><br><br>
+      <button>Python Advanced Course Details</button><br><br>
+   </div>
+
+   <div>
+      <h1>CodingMagic4Kids</h1>
+      <h3>Student Registration Form</h3>
+      <br>
+   </div>
+   <div class="center">
+      <label class="inputLabel" for="fname">First Name</label>
+      <input class="textBox" type="text" id="fname">
+      <br>
+
+      <label class="inputLabel" for="lname">Last Name</label>
+      <input class="textBox" type="text" id="lname">
+      <br>
+
+      <label class="inputLabel" for="age">Age</label>
+      <input class="textBox" type="text" id="age" list="AgeList">
+      <br>
+
+      <label class="inputLabel" for="course">Course</label>
+      <input class="textBox" type="text" id="course" list="CourseList" >
+      <br>
+
+      <label class="inputLabel" for="day">Pick the Day</label>
+      <input class="textBox" type="text" id="day" list="DayList" >
+      <br>
+
+      <label class="inputLabel" for="timings">Timings</label>
+      <input class="textBox" type="text" id="timings" list="TimingsList" >
+      <br>
+   </div>
+
+   <button class="buttonText" onclick="registration()">Submit</button>
+   <p id="zelle"></p>
+   <script src="studentRegistration.js"></script>
+</body>
+</html>

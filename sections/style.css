@@ -1,0 +1,150 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header 
+{
+   background-color: teal;
+   padding: 30px;
+   text-align: center;
+   font-size: 35px;
+   font-weight: bold;
+   font-style : italic;
+   color: darkorange;
+   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav
+{
+   float: left;
+   width: 30%;
+   background: #ccc;
+   padding: 20px;
+   font-size: 20px;
+   min-height: 240px;
+   overflow-y: auto;
+}
+.nav2
+{
+   min-height: 380px;
+}
+
+/* Style the list inside the menu */
+nav ul
+{
+   list-style-type: none;
+   padding: 0;
+}
+
+article
+{
+   float: left;
+   padding: 20px;
+   width: 70%;
+   background-color: pink;
+   text-align: justify;
+   line-height: 150%;
+   min-height: 240px;
+   overflow-y: auto;
+}
+/* Clear floats after the columns */
+section::after
+{
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Style the footer */
+footer
+{
+   background-color: #777;
+   padding: 10px;
+   text-align: center;
+   color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px)
+{
+   nav, article
+   {
+      width: 100%;
+      height: auto;
+   }
+}
+img
+{
+   border: 5px solid #733635;
+   width : 100px;
+   height : 100px;
+}
+.centerBox
+{
+   background-color: #FFE5CC;
+   border: 1px solid white;
+   margin-left: 20%;
+   padding: 10px;
+   width: 55%;
+   height: 100%;
+   text-align: left;
+   box-shadow: 0 0 0 5px red, 0 0 0 10px green;
+}
+body
+{
+   font-size: 15px;
+   font-family: Verdana;
+   text-align: center;
+}
+label.inputLabel,
+input.textBox
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 95px;
+    line-height: 30px;
+    display:inline-block; 
+    vertical-align:middle;
+}
+input.textBox
+{
+   width: 200px;
+   height: 20px;
+}
+.buttonText
+{
+   font-size: 18px;
+}
+button.buttonBoldText
+{
+   height: 40px;
+   width: 100px;
+   font-size: 19px;
+   font-weight: bold;
+   background-color: darkgrey;
+   padding : 5px;
+}
+table, th, td
+{
+   border:1px solid black;
+   border-radius:  8px;
+   border-spacing: 4px;
+   transform: skewX(-3deg);
+   padding: 4px;
+}
+.tb1
+{
+   border:1px solid grey;
+   border-radius:  0px;
+   transform: skewX(0deg);
+}
+
