@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CodingMagic</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="jbstyle.css">
+</head>
+<body>
+<header>
+   <h2>
+      Coding Magic
+      <img src="../sections/codingmagic4kids.png" alt="CodingMagic">
+   </h2>
+</header>
+
+<section>
+   <nav>
+     <iframe src="nav.html"></iframe>
+   </nav>
+  
+  <article>
+    <h2>Java Annotations</h2>
+
+    
+    <h3>Standard Annotations</h3>
+
+   <table class="tbSpacing">
+   <tr style="background-color:#DB9187">
+      <th>General Purpose</th>
+      <th>Meta Annotations(annotations about annotations)</th>
+   </tr>
+   <tr>
+      <td title="Marks method as a superclass method that has been overridden. If @Override marked method fails to override any superclass method, the compiler generates an error.">@Override</td>
+      <td  title="Indicates that whenever the specified annotation is used those elements should be documented using the Javadoc tool">@Documented</td>
+   </tr>
+   <tr>
+      <td  title="Tells compiler to suppress specific warnings that it would otherwise generate. Values: All, unchecked, unused, deprecation etc">@SuppressWarnings</td>
+      <td  title="Indicates that the annotation type can be inherited from the super class">@Inherited</td>
+   </tr>
+   <tr>
+      <td  title="Indicates that the marked element is deprecated and should no longer be used">@Deprecated</td>
+      <td  title="Marks an annotation to restrict what kind of Java elements the annotation can be applied to">@Target</td>
+   </tr>
+   <tr>
+      <td  title="Indicates that the type declaration is intended to be a functional interface(has only one abstract method)">@FunctionalInterface</td>
+      <td  title="Specifies how the marked annotation is stored. If RetentionPolicy : SOURCE (Retained only at source-level, ignored by compiler), CLASS (Retained at compile time, ignored by JVM), RUNTIME (retained by JVM)">@Retention</td>
+   </tr>
+   <tr>
+      <td>In package java.lang</td>
+      <td>In package java.lang.annotation</td>
+   </tr>
+   </table>
+
+    <h3>Values of ElementType for @Target annotation</h3>
+
+   <table class="tbSpacing">
+   <tr>
+      <td>ANNOTATION_TYPE</td>
+      <td>Annotation usable for other annotations</td>
+   </tr>
+   <tr>
+      <td>TYPE</td>
+      <td>Annotation usable for Class, Interface or Enum</td>
+   </tr>
+   <tr>
+      <td>CONSTRUCTOR</td>
+      <td>Annotation usable for Constructor</td>
+   </tr>
+   <tr>
+      <td>FIELD</td>
+      <td>Annotation usable for Field/Property</td>
+   </tr>
+   <tr>
+      <td>LOCAL_VARIABLE</td>
+      <td>Annotation usable for Local Variable</td>
+   </tr>
+   <tr>
+      <td>METHOD</td>
+      <td>Annotation usable for Method</td>
+   </tr>
+   <tr>
+      <td>PACKAGE</td>
+      <td>Annotation usable for Package</td>
+   </tr>
+   <tr>
+      <td>PARAMETER</td>
+      <td>Annotation usable for Method Parameters</td>
+   </tr>
+   </table>
+ </article>
+
+   <aside>
+      <iframe src="aside.html"></iframe>
+   </aside>
+</section>
+   <footer>
+      <p> Email : codingmagic4kids@gmail.com  </p>
+      <p> Phone : 408-647-4265 </p>
+   </footer>
+</body>
+</html>
+
+

@@ -3,15 +3,10 @@
   box-sizing: border-box;
 }
 
-body
-{
-   font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Style the header */
 header 
 {
-   background-color: teal;
+   background-color: green;
    padding: 30px;
    text-align: center;
    font-size: 35px;
@@ -20,21 +15,18 @@ header
    color: darkorange;
    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
-
+h1
+{
+   font-size: 20px;  
+   padding-top : 20px;  
+}
 /* Create two columns/boxes that floats next to each other */
 nav
 {
    float: left;
-   width: 30%;
-   background: #ccc;
+   width: 20%;
    padding: 20px;
    font-size: 20px;
-   min-height: 240px;
-   overflow-y: auto;
-}
-.nav2
-{
-   min-height: 380px;
 }
 
 /* Style the list inside the menu */
@@ -48,12 +40,10 @@ article
 {
    float: left;
    padding: 20px;
-   width: 70%;
-   background-color: pink;
+   width: 80%;
+   background-color: #ffdeba;
    text-align: justify;
    line-height: 150%;
-   min-height: 240px;
-   overflow-y: auto;
 }
 /* Clear floats after the columns */
 section::after
@@ -87,64 +77,33 @@ img
    width : 100px;
    height : 100px;
 }
-.centerBox
+p
 {
-   background-color: #FFE5CC;
-   border: 1px solid white;
-   margin-left: 20%;
-   padding: 10px;
-   width: 55%;
-   height: 100%;
-   text-align: left;
-   box-shadow: 0 0 0 5px red, 0 0 0 10px green;
+    font-size: 18px;
+    padding : 0px;
 }
 body
 {
    font-size: 15px;
-   font-family: Verdana;
+   font-family: system-ui;
    text-align: center;
-}
-label.inputLabel,
-input.textBox
-{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 30px;
-    width: 95px;
-    line-height: 30px;
-    display:inline-block; 
-    vertical-align:middle;
-}
-input.textBox
-{
-   width: 200px;
-   height: 20px;
-}
-.buttonText
-{
-   font-size: 18px;
-}
-button.buttonBoldText
-{
-   height: 40px;
-   width: 100px;
-   font-size: 19px;
-   font-weight: bold;
-   background-color: darkgrey;
-   padding : 5px;
+   background: #ccc;
 }
 table, th, td
 {
    border:1px solid black;
+   font-size: 19px;
    border-radius:  8px;
-   border-spacing: 4px;
-   transform: skewX(-3deg);
-   padding: 4px;
+   border-spacing: 6px;
+   box-shadow : -5px -5px 2px #FFFFCC;
+   //transform: skewX(-3deg);
+   padding: 8px;
 }
-.tb1
+table
 {
-   border:1px solid grey;
-   border-radius:  0px;
-   transform: skewX(0deg);
+   box-shadow : -10px -10px 5px orange;
+   border: 3px solid white;
+   background-color: #e1dac5;
+   margin : 20px;
 }
 
