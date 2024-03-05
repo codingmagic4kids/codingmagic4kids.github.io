@@ -126,6 +126,8 @@ p
    margin-left: 10%;
    padding: 1px;
    text-align: left;
+   font-family: Verdana;
+   //font-family: Monaco;
 }
 
 img

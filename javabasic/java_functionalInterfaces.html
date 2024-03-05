@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CodingMagic</title>
+   <link rel="stylesheet" type="text/css" href="../sections/style.css">
+</head>
+<body>
+   <iframe class="iframeHeader" src="../sections/header.html"></iframe>
+<section>
+   <nav>
+     <iframe src="nav.html"></iframe>
+   </nav>
+ 
+  <article>
+    <h2>Java Predefined Functional Interfaces</h2>
+
+    
+    <p>Package <b>java.util.function</b> provides these predefined functional interfaces</p>
+
+   <table class="tbSpacing" style="text-align:left">
+   <tr style="background-color:#DB9187">
+      <th>Interface</th>
+      <th>Method</th>
+      <th>Purpose</th>
+   </tr>
+   <tr>
+      <td>UnaryOperator<<x>T></td>
+      <td style="white-space: nowrap;"> T <b>apply</b>(T m)</td>
+      <td>Apply a unary operation to an object of type T and return result of type T.</td>
+   </tr>
+   <tr>
+      <td>BinaryOperator<<x>T></td>
+      <td style="white-space: nowrap;"> T <b>apply</b>(T m, T n)</td>
+      <td>Apply an operation to two objects of type T and return result of type T.</td>
+   </tr>
+   <tr>
+      <td>Supplier<<x>T></td>
+      <td style="white-space: nowrap;">T <b>get</b>()</td>
+      <td>Return an object of type T</td>
+   </tr>
+   <tr>
+      <td>Consumer<<x>T></td>
+      <td style="white-space: nowrap;">void <b>accept</b>(T m)</td>
+      <td>Apply an operation on object of type T</td>
+   </tr>
+   <tr>
+      <td>Predicate<<x>T></td>
+      <td style="white-space: nowrap;">boolean <b>test</b>(T m)</td>
+      <td>Determine if an object of type T fulfills some constraint. Return outcome as boolean value</td>
+   </tr>
+   <tr>
+      <td>Function<<x>T,R></td>
+      <td style="white-space: nowrap;">R <b>apply</b>(T m)</td>
+      <td>Apply an operation to an object of type T and return the result of type R.</td>
+   </tr>
+   <tr>
+      <td>BiConsumer<<x>T,U></td>
+      <td style="white-space: nowrap;">void <b>accept</b>(T m, U n)</td>
+      <td>Use when Consumer needs 2 input parameters</td>
+   </tr>
+   <tr>
+      <td>BiPredicate<<x>T,U></td>
+      <td style="white-space: nowrap;">boolean <b>test</b>(T m, U n)</td>
+      <td>Use when Predicate needs 2 input parameters</td>
+   </tr>
+   <tr>
+      <td>BiFunction<<x>T,U,R></td>
+      <td style="white-space: nowrap;">R <b>apply</b>(T m, U n)</td>
+      <td>Use when Function needs 2 input parameters</td>
+   </tr>
+   </table>
+ </article>
+
+   <aside>
+      <iframe src="aside.html"></iframe>
+   </aside>
+</section>
+   <footer>
+      <p> Email : codingmagic4kids@gmail.com  </p>
+      <p> Phone : 408-647-4265 </p>
+   </footer>
+</body>
+</html>
+
+
